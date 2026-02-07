@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FF">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internship Tracker"
+        android:fontFamily="@font/times_new_roman"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/logoCircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <!-- Blue Circle Logo -->
+    <ImageView
+        android:id="@+id/logoCircle"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circle_blue"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintBottom_toTopOf="@id/taglineText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- A inside circle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/times_new_roman"
+        android:textColor="#F5F7FF"
+        app:layout_constraintTop_toTopOf="@id/logoCircle"
+        app:layout_constraintBottom_toBottomOf="@id/logoCircle"
+        app:layout_constraintStart_toStartOf="@id/logoCircle"
+        app:layout_constraintEnd_toEndOf="@id/logoCircle"/>
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/taglineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track your daily progress"
+        android:fontFamily="@font/times_new_roman"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/logoCircle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
